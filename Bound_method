@@ -1,0 +1,7 @@
+class MyClass:
+  def greet(self):
+    return f"HEllo from {self}"
+my_object=MyClass()
+bound_method=my_object.greet
+print(bound_method)
+print(my_object.greet())
