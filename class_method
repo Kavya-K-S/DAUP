@@ -1,0 +1,6 @@
+class MyClass:
+  class_variable="I am a class variable"
+  @classmethod
+  def get_class_variable(cls): #class method
+         print(cls.class_variable)
+MyClass.get_class_variable()
