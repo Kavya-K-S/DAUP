@@ -1,0 +1,7 @@
+class Car:
+    def __init__(self,name):
+        self.name=name
+    def model(self): #instance method
+        print(f"{self.name} is a hatchback car")
+my_car=Car("swift")
+my_car.model()
