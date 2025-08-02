@@ -1,0 +1,16 @@
+class Scanner:
+    def scan(self):
+        print("Scanning Document")
+
+class Printer:
+    def print_doc(self):
+        print("Printng Document")
+
+class AllInOneMachine(Scanner, Printer):
+    def status(self):
+        print("Ready to use")
+
+machine = AllInOneMachine()
+machine.scan()
+machine.print_doc()
+machine.status()
