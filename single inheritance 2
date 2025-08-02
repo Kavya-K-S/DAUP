@@ -1,0 +1,12 @@
+class Person:
+  def __init__(self,name):
+    self.name=name
+  def display(self):
+    print(f"Name : {self.name}")
+class Teacher(Person):
+  def teach(self):
+    print(f"{self.name} is a teacher")
+t=Teacher("Anju")
+t.display()
+t.teach()
+    
