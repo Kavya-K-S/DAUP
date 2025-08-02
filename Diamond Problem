@@ -1,0 +1,13 @@
+class A:
+  def show(self):
+    print("Method from class A")                        #A
+class B(A):                                         #B      C
+  def show(self):                                       #D
+    print("Method from class B")
+class C(A):                                              
+  def show(self):
+    print("Method from class C")
+class D(B,C):
+  pass
+obj=D()
+obj.show()
