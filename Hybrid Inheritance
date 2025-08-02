@@ -1,0 +1,20 @@
+class A:
+  def feature_a(self):
+    print("feature from class A")
+class B(A):
+  def feature_b(self):
+    print("Feature from class B")
+class C(A):
+  def feature_c(self):
+    print("Feature from class C")
+class D(B,C):
+  def feature_d(self):
+    print("Feature from class D")
+c=C()
+c.feature_a()
+c.feature_c()
+d=D()
+d.feature_a()
+d.feature_b()
+d.feature_c()
+d.feature_d()
