@@ -1,0 +1,13 @@
+class Devices:
+  def power_on(self):
+    print("Device is now ON")
+class Computer(Devices):
+  def run_os(self):
+    print("This device is booting the operating system")
+class login(Computer):
+    def login(self):
+      print("User login")
+l=login()
+l.power_on()
+l.run_os()
+l.login()
