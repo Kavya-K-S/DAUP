@@ -1,0 +1,15 @@
+class A:
+  def feature_a(self):
+    print("feature from class A")
+class B(A):
+  def feature_b(self):
+    print("Feature from class B")
+class C(A):
+  def feature_c(self):
+    print("Feature from class C")
+obj=B()
+obj.feature_a()
+obj.feature_b()
+obj1=C()
+obj1.feature_a()
+obj1.feature_c()
